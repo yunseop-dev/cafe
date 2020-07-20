@@ -36,18 +36,21 @@ li {
     margin-bottom: 20px;
 }
 
-.l_col_12_12 { width: 100%; }
-.l_col_11_12 { width: 91.66666667%; }
-.l_col_10_12 { width: 83.33333333%; }
-.l_col_9_12  { width: 75%; }
-.l_col_8_12  { width: 66.66666667%; }
-.l_col_7_12  { width: 58.33333333%; }
-.l_col_6_12  { width: 50%; }
-.l_col_5_12  { width: 41.66666667%; }
-.l_col_4_12  { width: 33.33333333%; }
-.l_col_3_12  { width: 25%; }
-.l_col_2_12  { width: 16.66666667%; }
-.l_col_1_12  { width: 8.33333333%; }
+
+
+    
+.l_col_desktop_12_12 { width: 100%; }
+.l_col_desktop_11_12 { width: 91.66666667%; }
+.l_col_desktop_10_12 { width: 83.33333333%; }
+.l_col_desktop_9_12  { width: 75%; }
+.l_col_desktop_8_12  { width: 66.66666667%; }
+.l_col_desktop_7_12  { width: 58.33333333%; }
+.l_col_desktop_6_12  { width: 50%; }
+.l_col_desktop_5_12  { width: 41.66666667%; }
+.l_col_desktop_4_12  { width: 33.33333333%; }
+.l_col_desktop_3_12  { width: 25%; }
+.l_col_desktop_2_12  { width: 16.66666667%; }
+.l_col_desktop_1_12  { width: 8.33333333%; }
 
 .l_wrapper {
     padding: 20px;
@@ -61,6 +64,16 @@ li {
 .main_cover {
     width: 50%;
     position: fixed;
+}
+
+.main_title {
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    font-size: 7vw;
+    padding: 20px;
+    line-height: 1;
+    color: white;
 }
 
 .main_image {
@@ -100,3 +113,40 @@ li {
 
 /* Mediaquries */
 
+@media (max-width: 1200px) {
+    .main_cover {
+        width: 100%;
+        position: relative;
+    }
+    .main_image {
+        width: 100%;
+    }
+    
+    .main_title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 7vw;
+        padding: 20px;
+        line-height: 1;
+        color: white;       
+    }
+    .main_contents {
+        width: 100%;
+        float: initial;
+    }
+
+
+    .l_col_12_12 { width: 100%; }
+    .l_col_11_12 { width: 91.66666667%; }
+    .l_col_10_12 { width: 83.33333333%; }
+    .l_col_9_12  { width: 75%; }
+    .l_col_8_12  { width: 66.66666667%; }
+    .l_col_7_12  { width: 58.33333333%; }
+    .l_col_6_12  { width: 50%; }
+    .l_col_5_12  { width: 41.66666667%; }
+    .l_col_4_12  { width: 33.33333333%; }
+    .l_col_3_12  { width: 25%; }
+    .l_col_2_12  { width: 16.66666667%; }
+    .l_col_1_12  { width: 8.33333333%; }
+}
