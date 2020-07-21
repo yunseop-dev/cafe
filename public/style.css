@@ -63,7 +63,14 @@ li {
 
 .main_cover {
     width: 50%;
+    display: inline-block;
     position: fixed;
+}
+
+.main_image {
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .main_title {
@@ -74,10 +81,6 @@ li {
     padding: 20px;
     line-height: 1;
     color: white;
-}
-
-.main_image {
-    width: 100%;
 }
 
 .main_contents {
@@ -97,7 +100,7 @@ li {
 .footer {}
 .footer_button {
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(254, 214, 49);
     text-transform: uppercase;
     display: inline-block;
     font-size: 1.5em;
